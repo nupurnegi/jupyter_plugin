@@ -1,0 +1,16 @@
+apiVersion: v2
+publisher: Microsoft
+name: jupyter
+version: 2021.4.641214696
+type: VS Code extension
+displayName: Jupyter
+title: Jupyter
+description: Jupyter
+icon: https://raw.githubusercontent.com/redhat-developer/codeready-workspaces/master/dependencies/che-plugin-registry/resources/images/default.svg?sanitize=true
+repository: https://github.com/Microsoft/vscode-jupyter
+category: Language
+firstPublicationDate: '2020-03-12'
+spec:
+  extensions:
+  - "https://gist.github.com/nupurnegi//raw/ms-toolsai.jupyter-2021.4.641214696.vsix"
+latestUpdateDate: "2021-03-11"
