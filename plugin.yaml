@@ -12,5 +12,5 @@ category: Language
 firstPublicationDate: '2020-03-12'
 spec:
   extensions:
-  - "https://gist.github.com/nupurnegi//raw/ms-toolsai.jupyter-2021.4.641214696.vsix"
+  - "https://github.com/nupurnegi/jupyter_plugin/blob/main/ms-toolsai.jupyter-2021.4.641214696.vsix"
 latestUpdateDate: "2021-03-11"
