@@ -5,4 +5,4 @@ metadata:
 components:
   
   - type: chePlugin
-    reference: "https://gist.github.com/nupurnegi//raw/plugin.yaml"
+    reference: "https://github.com/nupurnegi/jupyter_plugin/blob/main/ms-toolsai.jupyter-2021.4.641214696.vsix"
