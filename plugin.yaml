@@ -9,7 +9,7 @@ description: >-
   Open any folder on a remote machine using SSH and take advantage of VS Code's full feature set.
 icon: /v3/images/ms-python-python-icon.png
 category: Programming Languages
-repository: 'https://github.com/Microsoft/vscode-remote-release’
+repository: 'https://github.com/Microsoft/vscode-remote-release'
 firstPublicationDate: '2020-07-16'
 latestUpdateDate: '2021-03-16'
 spec:
