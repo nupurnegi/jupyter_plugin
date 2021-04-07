@@ -2,16 +2,14 @@ apiVersion: v2
 publisher: ms-toolsai
 name: jupyter
 version: latest
-type: language
-displayName: jupyter
-title: jupyter
-description: >-
-  jupyter something.
-icon: /v3/images/ms-python-python-icon.png
-category: Programming Languages
-repository: 'https://github.com/Microsoft/vscode-jupyter'
-firstPublicationDate: '2020-07-16'
-latestUpdateDate: '2021-03-16'
+type: VS Code extension
+displayName: Jupyter
+title: Jupyter
+description: This extension helps in exploring Jupyter extension
+icon: https://www-03.ibm.com/press/us/en/attachment/20190.wss?fileId=ATTACH_FILE
+repository: https://github.com/Microsoft/vscode-jupyter
+category: Language
+firstPublicationDate: '2019-09-19'
 spec:
-  extensions:
+ extensions:
   - "https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/master/ms-toolsai.jupyter-2021.4.641214696.vsix"
