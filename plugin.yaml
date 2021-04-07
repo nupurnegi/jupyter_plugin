@@ -1,17 +1,17 @@
 apiVersion: v2
-publisher: ms-vscode
-name: remote-ssh
+publisher: ms-toolsai
+name: jupyter
 version: latest
-type: VS Code extension
-displayName: RemoteSSH
-title: RemoteSSH
+type: language
+displayName: jupyter
+title: jupyter
 description: >-
-  Open any folder on a remote machine using SSH and take advantage of VS Code's full feature set.
+  jupyter something.
 icon: /v3/images/ms-python-python-icon.png
 category: Programming Languages
-repository: 'https://github.com/Microsoft/vscode-remote-release'
+repository: 'https://github.com/Microsoft/vscode-jupyter'
 firstPublicationDate: '2020-07-16'
 latestUpdateDate: '2021-03-16'
 spec:
   extensions:
-  - "https://github.com/nupurnegi/jupyter_plugin/blob/main/ms-vscode-remote.remote-ssh-0.65.1.vsix"
+  - "https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/master/ms-toolsai.jupyter-2021.4.641214696.vsix"
