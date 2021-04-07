@@ -1,5 +1,5 @@
 apiVersion: v2
-publisher: ms-toolsai
+publisher: ms-toolsai 
 name: jupyter
 version: latest
 type: VS Code extension
@@ -8,7 +8,7 @@ title: Jupyter
 description: This extension helps in exploring Jupyter extension
 icon: https://www-03.ibm.com/press/us/en/attachment/20190.wss?fileId=ATTACH_FILE
 repository: https://github.com/Microsoft/vscode-jupyter
-category: Language
+category: Programming Languages
 firstPublicationDate: '2019-09-19'
 spec:
  extensions:
