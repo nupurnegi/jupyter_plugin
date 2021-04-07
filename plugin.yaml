@@ -12,4 +12,4 @@ category: Language
 firstPublicationDate: '2019-09-19'
 spec:
  extensions:
-  - "https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/master/ms-toolsai.jupyter-2021.4.641214696.vsix"
+  - "https://github.com/nupurnegi/jupyter_plugin/blob/main/ms-toolsai.jupyter-2021.4.641214696.vsix"
