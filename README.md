@@ -12,5 +12,5 @@ category: Language
 firstPublicationDate: '2019-09-19'
 spec:
  extensions:
-  - relative:
+  - https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/master/ms-toolsai.jupyter-2021.6.812916528.vsix
 latestUpdateDate: '2020-11-17'
