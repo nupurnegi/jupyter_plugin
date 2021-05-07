@@ -21,4 +21,4 @@ spec:
       cpuRequest: 30m
       cpuLimit: 500m
   extensions:
-    - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
+    - 'https://github.com/microsoft/vscode-python/releases/download/2020.2.62710/ms-python-release.vsix'
