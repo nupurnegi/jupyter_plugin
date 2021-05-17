@@ -16,3 +16,6 @@ latestUpdateDate: '2021-04-29'
 spec:
   extensions:
     - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
+    - 'https://github.com/nupurnegi/jupyter_plugin/releases/download/jupyter_plugin/jupyterserver-0.0.1.vsix'
+    
+    
