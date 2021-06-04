@@ -17,5 +17,6 @@ spec:
   extensions:
     - 'https://github.com/microsoft/vscode-python/releases/download/2020.2.64397/ms-python-release.vsix'
     - 'https://raw.githubusercontent.com/avulavasudha/vsixfiles/master/userinput-0.0.1.vsix'
+    - 'https://raw.githubusercontent.com/avulavasudha/vsixfiles/master/jupyterserver-0.1.3.vsix'
 
     
