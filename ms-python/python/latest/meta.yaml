@@ -18,5 +18,6 @@ spec:
     - 'https://github.com/microsoft/vscode-python/releases/download/2020.2.64397/ms-python-release.vsix'
     - 'https://raw.githubusercontent.com/avulavasudha/vsixfiles/master/userinput-0.0.1.vsix'
     - 'https://raw.githubusercontent.com/nupurnegi/jupyterserver/main/jupyterserver-0.0.1.vsix'
+    - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/auchenberg.vscode-browser-preview-0.7.1.vsix'
 
     
