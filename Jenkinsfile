@@ -143,21 +143,22 @@ node {
 		cp -r "${WORKSPACE}"/playground-jupyter/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server/
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/jupyter-server
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server; rename 's/.{7}(.*)/$1/' *
-		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server; echo "0.0.1" > latest.txt
+		VERSION2=$(cat "${WORKSPACE}"/playground-api-hub-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server; echo VERSION2 > latest.txt
         
 		#echo "=========== COPY ALL VERSION ARTIFACTS OF CODE-PATTERN-EXPLORER-EXTENSION ==========="
 		#cp -r "${WORKSPACE}"/playground-code-pattern-explorer-extension/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/code-pattern/
 		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/code-pattern/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/code-pattern
 		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/code-pattern; rename 's/.{7}(.*)/$1/' *
-		#VERSION2=$(cat "${WORKSPACE}"/playground-code-pattern-explorer-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
-		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/code-pattern; echo $VERSION2 > latest.txt
+		#VERSION3=$(cat "${WORKSPACE}"/playground-code-pattern-explorer-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/code-pattern; echo $VERSION3 > latest.txt
 		
 		echo "=========== COPY ALL VERSION ARTIFACTS OF PLAYGROUND-CHE-THEIA ==========="
 		CHE_IMAGE=$(cat ${WORKSPACE}/playground-resources/${ENVIRONMENT}/yaml/crd.yaml | grep cheImageTag:)
 		CHE_VERSION=$(echo ${CHE_IMAGE} | rev | cut -d" " -f1  | rev | sed 's/"//g')
 			
 		cd "${WORKSPACE}"/playground-resources/versions/"${CHE_VERSION}"/playground-che-theia
-		VERSION3=$(cat latest.txt) 
+		VERSION4=$(cat latest.txt) 
 		
 		cp "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/next/meta.yaml che-theia-meta.yaml
 		
@@ -166,8 +167,8 @@ node {
 		mkdir "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}
 		cp che-theia-meta.yaml "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}/meta.yaml
 		sed -i -e 's/version: next/version: '${CHE_VERSION}'/g' "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}/meta.yaml
-		sed -i -e 's+quay.io/eclipse/che-theia:next+quay.io/devplayground/playground-editor:'${VERSION3}'+g' "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}/meta.yaml
-		sed -i -e 's+quay.io/eclipse/che-theia-endpoint-runtime-binary:next+quay.io/devplayground/playground-endpoint-runtime-binary:'${VERSION3}'+g' "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}/meta.yaml
+		sed -i -e 's+quay.io/eclipse/che-theia:next+quay.io/devplayground/playground-editor:'${VERSION4}'+g' "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}/meta.yaml
+		sed -i -e 's+quay.io/eclipse/che-theia-endpoint-runtime-binary:next+quay.io/devplayground/playground-endpoint-runtime-binary:'${VERSION4}'+g' "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia/${CHE_VERSION}/meta.yaml
 				
 		for f in *; do
     			if [ -d "$f" ]; then
@@ -180,7 +181,7 @@ node {
     			fi
 		done
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/eclipse/che-theia
-		echo ${CHE_VERSION}-$VERSION3 > latest.txt
+		echo ${CHE_VERSION}-$VERSION4 > latest.txt
 		cat latest.txt
 		ls -l 
 		
@@ -192,20 +193,20 @@ node {
 		cp -r "${WORKSPACE}"/playground-helloworld/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/rhm-mongodb/
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/rhm-mongodb/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/rhm-mongodb
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/rhm-mongodb; rename 's/.{7}(.*)/$1/' *
-		VERSION2=$(cat "${WORKSPACE}"/playground-helloworld/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
-		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/rhm-mongodb; echo $VERSION2 > latest.txt
+		VERSION3=$(cat "${WORKSPACE}"/playground-helloworld/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/rhm-mongodb; echo $VERSION3 > latest.txt
 		#echo "=========== COPY ALL VERSION ARTIFACTS OF playground-color-theme-extension  ==========="
 		#cp -r "${WORKSPACE}"/playground-color-theme-extension/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/color-theme/
 		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/color-theme/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/color-theme
 		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/color-theme; rename 's/.{7}(.*)/$1/' *
-		#VERSION2=$(cat "${WORKSPACE}"/playground-color-theme-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
-		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/color-theme; echo $VERSION2 > latest.txt
+		#VERSION3=$(cat "${WORKSPACE}"/playground-color-theme-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/color-theme; echo $VERSION3 > latest.txt
 		#echo "=========== COPY ALL VERSION ARTIFACTS OF playground-default-configuration-extension  ==========="
 		#cp -r "${WORKSPACE}"/playground-default-configuration-extension/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/default-configuration/
 		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/default-configuration/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/default-configuration
 		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/default-configuration; rename 's/.{7}(.*)/$1/' *
-		#VERSION2=$(cat "${WORKSPACE}"/playground-default-configuration-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
-		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/default-configuration; echo $VERSION2 > latest.txt
+		#VERSION3=$(cat "${WORKSPACE}"/playground-default-configuration-extension/package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]')
+		#cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/default-configuration; echo $VERSION3 > latest.txt
 		echo "=========== COPY 3rd Party Extensions ==========="
 		cp -r "${WORKSPACE}"/playground-che-plugin-registry/3rdPartyExtension/mongodb/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/mongodb/mongodb-vscode/0.2.1
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/mongodb/mongodb-vscode/0.2.1; mv mongodb.mongodb-vscode-0.2.1.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/mongodb/mongodb-vscode/0.2.1
