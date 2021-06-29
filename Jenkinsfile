@@ -126,10 +126,10 @@ node {
 	    	echo "=========== CREATE THE REQUIRED DIRECTORY STRUCTURE FOR COPYING CUSTOM PLUGINS ==========="
 	    	
 			mkdir "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/api-hub
-			mkdir "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter
+			mkdir "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server
 			mkdir "${WORKSPACE}"/che-plugin-registry/v3/plugins/mongodb "${WORKSPACE}"/che-plugin-registry/v3/plugins/mongodb/mongodb-vscode "${WORKSPACE}"/che-plugin-registry/v3/plugins/mongodb/mongodb-vscode/0.2.1
 			mkdir "${WORKSPACE}"/che-plugin-registry/v3/extensions "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/api-hub 
-			mkdir "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/jupyter
+			mkdir "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/jupyter-server
 	    	mkdir "${WORKSPACE}"/che-plugin-registry/v3/extensions/mongodb "${WORKSPACE}"/che-plugin-registry/v3/extensions/mongodb/mongodb-vscode "${WORKSPACE}"/che-plugin-registry/v3/extensions/mongodb/mongodb-vscode/0.2.1
 			mkdir "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/rhm-mongodb/  "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/rhm-mongodb
 		echo "=========== COPY ALL VERSION ARTIFACTS OF API-HUB-EXTENSION ==========="
@@ -140,10 +140,10 @@ node {
 		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/api-hub; echo $VERSION1 > latest.txt
 		
 		echo "=========== COPY ALL VERSION ARTIFACTS OF JUPYTER-EXTENSION ==========="
-		cp -r "${WORKSPACE}"/playground-jupyter/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter/
-		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/jupyter
-		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter; rename 's/.{7}(.*)/$1/' *
-		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter; echo "0.0.1" > latest.txt
+		cp -r "${WORKSPACE}"/playground-jupyter/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server/
+		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server/; mv **/*.vsix "${WORKSPACE}"/che-plugin-registry/v3/extensions/ibm-playground/jupyter-server
+		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server; rename 's/.{7}(.*)/$1/' *
+		cd "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/jupyter-server; echo "0.0.1" > latest.txt
         
 		#echo "=========== COPY ALL VERSION ARTIFACTS OF CODE-PATTERN-EXPLORER-EXTENSION ==========="
 		#cp -r "${WORKSPACE}"/playground-code-pattern-explorer-extension/versions/* "${WORKSPACE}"/che-plugin-registry/v3/plugins/ibm-playground/code-pattern/
