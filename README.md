@@ -1,3 +1,4 @@
+//This is a trail thing
 apiVersion: v2
 publisher: ibm-playground
 name: jupyter
