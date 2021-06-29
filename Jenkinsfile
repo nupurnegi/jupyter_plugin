@@ -59,7 +59,7 @@ node {
 			}//closing the cred
 		}//closing stage
 		stage('Pull the extensions from playground-jupyter') {
-            //withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'apihub_gitkey', usernameVariable: 'MYUSER', passwordVariable: 'MYTOKEN']]) {
+            withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'apihub_gitkey', usernameVariable: 'MYUSER', passwordVariable: 'MYTOKEN']]) {
 			echo "===== cloning the jupyter-extension ====="
 			sh "git clone -b master https://${MYUSER}:${MYTOKEN}@github.ibm.com/ibm-api-marketplace/playground-jupyter.git"
 			}//closing the cred
