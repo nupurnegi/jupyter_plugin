@@ -1,0 +1,16 @@
+apiVersion: v2
+publisher: Kenneth Auchenberg
+name: browser preview
+version: 0.7.1	
+type: VS Code extension
+displayName: browser preview
+title: browser preview
+description: >-
+  A real browser preview inside your editor that you can debug.
+icon: /v3/images/ms-python-python-icon.png
+category: Programming Languages
+repository: 'https://github.com/auchenberg/vscode-browser-preview'
+firstPublicationDate: '2020-07-16'
+latestUpdateDate: '12/04/2021'
+spec:
+  extensions: 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/auchenberg.vscode-browser-preview-0.7.1.vsix'
