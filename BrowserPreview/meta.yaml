@@ -4,7 +4,7 @@ name: browser preview
 version: 0.7.1	
 type: VS Code extension
 displayName: browserpreview
-title: browser preview
+title: browserpreview
 description: >- 
   A real browser preview inside your editor that you can debug.
 icon: /v3/images/ms-python-python-icon.png
