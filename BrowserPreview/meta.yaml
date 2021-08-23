@@ -1,7 +1,7 @@
 apiVersion: v2
-publisher: Kenneth Auchenberg
+publisher: KennethAuchenberg
 name: browserpreview
-version: 0.7.1	
+version: latest
 type: VS Code extension
 displayName: browserpreview
 title: browserpreview
@@ -11,7 +11,7 @@ icon: /v3/images/ms-python-python-icon.png
 category: Programming Languages
 repository: 'https://github.com/auchenberg/vscode-browser-preview'
 firstPublicationDate: '2020-07-16'
-latestUpdateDate: '12/04/2021'
+latestUpdateDate: '12-04-2021'
 spec:
   extensions: 
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/auchenberg.vscode-browser-preview-0.7.1.vsix'
