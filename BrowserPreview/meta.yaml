@@ -1,6 +1,6 @@
 apiVersion: v2
 publisher: Kenneth Auchenberg
-name: browser preview
+name: browserpreview
 version: 0.7.1	
 type: VS Code extension
 displayName: browserpreview
