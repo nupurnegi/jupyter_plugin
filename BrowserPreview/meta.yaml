@@ -3,7 +3,7 @@ publisher: Kenneth Auchenberg
 name: browser preview
 version: 0.7.1	
 type: VS Code extension
-displayName: browser preview
+displayName: browserpreview
 title: browser preview
 description: >- 
   A real browser preview inside your editor that you can debug.
