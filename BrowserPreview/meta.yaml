@@ -6,7 +6,7 @@ type: VS Code extension
 displayName: browser preview
 title: browser preview
 description: >- 
-     A real browser preview inside your editor that you can debug.
+  A real browser preview inside your editor that you can debug.
 icon: /v3/images/ms-python-python-icon.png
 category: Programming Languages
 repository: 'https://github.com/auchenberg/vscode-browser-preview'
