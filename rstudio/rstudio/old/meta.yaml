@@ -1,0 +1,17 @@
+apiVersion: v2
+publisher: YukiUeda
+name: rstudio
+version: latest
+type: VS Code extension
+displayName: rstudio
+title: rstudio
+description: >- 
+  A real browser preview inside your editor that you can debug.
+icon: /v3/images/ms-python-python-icon.png
+category: Programming Languages
+repository: 'https://github.com/REditorSupport/vscode-R'
+firstPublicationDate: '2021-08-21'
+latestUpdateDate: '2017-03-23'
+spec:
+  extensions:
+     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Ikuyadeu.r-2.2.0.vsix'
