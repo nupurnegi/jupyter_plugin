@@ -15,9 +15,7 @@ latestUpdateDate: '2017-03-23'
 spec:
   containers:
     - image: 'rocker/rstudio'
-      type: dockerimage
       name: rstudio
-      port: 3000
       volumes:
         - name: venv
           mountPath: /home/theia/.venv
