@@ -22,5 +22,6 @@ spec:
       memoryLimit: 512Mi
       cpuRequest: 30m
       cpuLimit: 500m
-
+  extensions:
+     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Ikuyadeu.r-2.2.0.vsix'
     
