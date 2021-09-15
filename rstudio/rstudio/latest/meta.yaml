@@ -5,7 +5,7 @@ version: latest
 type: VS Code extension
 displayName: rstudio
 title: rstudio
-description: >- 
+description: >-
   A real browser preview inside your editor that you can debug.
 icon: /v3/images/ms-python-python-icon.png
 category: Programming Languages
@@ -16,15 +16,13 @@ spec:
   containers:
     - image: 'rocker/rstudio'
       name: rstudio
+      endpoints:
+       - port: 8787
       env:
         - name: DISABLE_AUTH
-          value: "true"
-      volumes:
-        - name: venv
-          mountPath: /home/theia/.venv
+          value: true
       memoryLimit: 512Mi
       cpuRequest: 3m
       cpuLimit: 50m
   extensions:
      - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Ikuyadeu.r-2.2.0.vsix'
-    
