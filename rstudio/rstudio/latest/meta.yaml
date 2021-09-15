@@ -20,8 +20,8 @@ spec:
         - name: venv
           mountPath: /home/theia/.venv
       memoryLimit: 512Mi
-      cpuRequest: 30m
-      cpuLimit: 500m
+      cpuRequest: 3m
+      cpuLimit: 50m
   extensions:
      - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Ikuyadeu.r-2.2.0.vsix'
     
