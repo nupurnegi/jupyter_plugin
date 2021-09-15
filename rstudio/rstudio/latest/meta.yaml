@@ -16,7 +16,6 @@ spec:
   containers:
     - image: 'rocker/rstudio'
       name: rstudio
-      port: 8787
       env: DISABLE_AUTH=true
       volumes:
         - name: venv
