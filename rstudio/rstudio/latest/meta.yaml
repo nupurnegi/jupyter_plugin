@@ -16,7 +16,10 @@ spec:
   containers:
     - image: 'rocker/rstudio'
       name: rstudio
-      env: DISABLE_AUTH=true
+      port: 8787
+      env:
+        - name: DISABLE_AUTH
+          value: "true"
       volumes:
         - name: venv
           mountPath: /home/theia/.venv
