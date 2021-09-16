@@ -19,11 +19,9 @@ spec:
       volumes:
         - name: venv
           mountPath: /home/theia/.venv
-      endpoints:
-       - port: 8787
       env:
         - name: DISABLE_AUTH
-          value: true
+          value: "true"
       memoryLimit: 512Mi
       cpuRequest: 3m
       cpuLimit: 50m
