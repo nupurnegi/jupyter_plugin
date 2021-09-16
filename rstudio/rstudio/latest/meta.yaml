@@ -16,6 +16,9 @@ spec:
   containers:
     - image: 'rocker/rstudio'
       name: rstudio
+      volumes:
+        - name: venv
+          mountPath: /home/theia/.venv
       endpoints:
        - port: 8787
       env:
