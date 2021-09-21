@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: Mikhail Arkhipov
 name: rtool
-version: 0.0.26
+version: latest
 type: VS Code extension
 displayName: rtool
 title: rtool
