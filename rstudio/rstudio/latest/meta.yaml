@@ -1,5 +1,5 @@
 apiVersion: v2
-publisher: Mikhail Arkhipov
+publisher: MikhailArkhipov
 name: rtool
 version: latest
 type: VS Code extension
