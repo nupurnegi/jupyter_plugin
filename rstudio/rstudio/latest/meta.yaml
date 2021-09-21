@@ -1,17 +1,17 @@
 apiVersion: v2
-publisher: YukiUeda
-name: rstudio
-version: latest
+publisher: 	Mikhail Arkhipov
+name: rtool
+version: 	0.0.26
 type: VS Code extension
-displayName: rstudio
-title: rstudio
+displayName: rtool
+title: rtool
 description: >-
-  A real browser preview inside your editor that you can debug.
+  R Tools (IntelliSense, signature help, tooltips and more).
 icon: /v3/images/ms-python-python-icon.png
 category: Programming Languages
-repository: 'https://github.com/REditorSupport/vscode-R'
+repository: 'https://github.com/MikhailArkhipov/vscode-r'
 firstPublicationDate: '2021-08-21'
 latestUpdateDate: '2017-03-23'
 spec:
   extensions:
-     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Ikuyadeu.r-2.2.0.vsix'
+     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Mikhail-Arkhipov.r-0.0.26.vsix'
