@@ -1,0 +1,29 @@
+version: 1.0.0
+editors:
+  - id: rstudio/rstudio/editor
+    title: RStudio
+    displayName: rstudio
+    description: Rstudio
+    icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
+    repository: https://github.com/REditorSupport/vscode-R
+    firstPublicationDate: "2021-08-21"
+    endpoints:
+      - name: "rstudio"
+        public: true
+        targetPort: 8787
+        attributes:
+          protocol: http
+          type: ide
+          secure: true
+          cookiesAuthEnabled: true
+          discoverable: false
+    containers:
+      - name: rstudio
+        image: "rocker/rstudio"
+        mountSources: true
+        ports:
+          - exposedPort: 8787
+        env:
+          - name: DISABLE_AUTH
+            value: "true"
+        memoryLimit: "512M"
