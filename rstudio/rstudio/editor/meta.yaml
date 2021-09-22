@@ -2,6 +2,7 @@ version: 1.0.0
 editors:
   - id: rstudio/rstudio/editor
     title: RStudio
+    publisher: YukiUeda
     displayName: rstudio
     description: Rstudio
     icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
