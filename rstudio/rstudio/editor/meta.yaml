@@ -20,7 +20,7 @@ editors:
           discoverable: false
     containers:
       - name: rstudio
-        image: "https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/Ikuyadeu.r-2.2.0.vsix"
+        image: "rocker/rstudio"
         mountSources: true
         ports:
           - exposedPort: 8787
