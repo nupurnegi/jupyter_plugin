@@ -15,4 +15,4 @@ firstPublicationDate: '2020-07-16'
 latestUpdateDate: '2021-04-29'
 spec:
   extensions:
-    - 'https://raw.githubusercontent.com/nupurnegi/jupyterserver/main/ms-python.python-2021.10.1317843341.vsix'
+    - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/ms-python.python-2021.10.1317843341.vsix'
