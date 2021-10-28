@@ -14,5 +14,15 @@ repository: 'https://github.com/Microsoft/vscode-python'
 firstPublicationDate: '2020-07-16'
 latestUpdateDate: '2021-04-29'
 spec:
+  containers:
+    - image: 'quay.io/eclipse/che-plugin-sidecar:python-2fca849'
+      name: vscode-python
+      volumes:
+        - name: venv
+          mountPath: /home/theia/.venv
+      memoryLimit: 512Mi
+      memoryRequest: 20Mi
+      cpuRequest: 30m
+      cpuLimit: 500m
   extensions:
     - 'https://raw.githubusercontent.com/avulavasudha/vsixfiles/master/ms-python-insiders.vsix'
