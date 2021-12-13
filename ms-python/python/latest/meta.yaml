@@ -15,5 +15,5 @@ firstPublicationDate: '2020-07-16'
 latestUpdateDate: '2021-04-29'
 spec:
   extensions:
-    - 'https://raw.githubusercontent.com/avulavasudha/vsixfiles/master/ms-python-insiders.vsix'
+    - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
 
