@@ -16,4 +16,5 @@ latestUpdateDate: '2021-04-29'
 spec:
   extensions:
     - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
+    - 'https://github.com/nupurnegi/didact/blob/master/tht13.html-preview-vscode-0.2.5.vsix'
 
