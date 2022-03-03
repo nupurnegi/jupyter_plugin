@@ -16,5 +16,4 @@ latestUpdateDate: '2021-04-29'
 spec:
   extensions:
     - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
-    - 'https://raw.githubusercontent.com/nupurnegi/didact/master/hdg.live-html-previewer-0.3.0.vsix'
 
