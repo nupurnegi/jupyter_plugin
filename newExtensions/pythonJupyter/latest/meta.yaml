@@ -1,10 +1,10 @@
 apiVersion: v2
-publisher: ms-python
-name: python
+publisher: ms-toolsai
+name: jupyter
 version: latest
 type: VS Code extension
-displayName: Python
-title: Python
+displayName: Jupyter
+title: Jupyter
 description: >-
   Linting, Debugging (multi-threaded, remote), Intellisense, Jupyter Notebooks, code formatting, refactoring, unit
   tests, snippets, and more.
@@ -16,6 +16,5 @@ latestUpdateDate: '2021-04-29'
 spec:
   extensions:
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-toolsai.jupyter-2022.3.1000632050.vsix'
-    - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-python.python-2022.0.1814523869.vsix'
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-toolsai.jupyter-renderers-1.0.6.vsix'
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-toolsai.jupyter-keymap-1.0.0.vsix'
