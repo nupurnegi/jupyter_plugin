@@ -15,4 +15,4 @@ firstPublicationDate: '2020-07-16'
 latestUpdateDate: '2022-02-29'
 spec:
   extensions:
-    - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
+    - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-python.python-2022.0.1814523869.vsix'
