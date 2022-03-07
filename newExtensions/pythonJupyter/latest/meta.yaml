@@ -18,3 +18,4 @@ spec:
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-toolsai.jupyter-2022.3.1000632050.vsix'
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-toolsai.jupyter-renderers-1.0.6.vsix'
     - 'https://raw.githubusercontent.com/nupurnegi/jupyter_plugin/main/newExtensions/ms-toolsai.jupyter-keymap-1.0.0.vsix'
+    - 'https://github.com/microsoft/vscode-python/releases/download/2020.7.94776/ms-python-release.vsix'
