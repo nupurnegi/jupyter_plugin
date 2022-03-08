@@ -99,7 +99,7 @@ spec:
         secure: true
       public: true
   containers:
-    - image: 'quay.io/devplayground/che-theia:354794f9f421c51a6ab5274cd42ff506f648f752-7.39.2'
+    - image: 'quay.io/devplayground/che-theia:next'
       env:
         - name: THEIA_PLUGINS
           value: 'local-dir:///plugins'
